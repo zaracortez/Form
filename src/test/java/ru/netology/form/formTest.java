@@ -11,7 +11,7 @@ public class formTest {
     @Test
     void shouldMakeConfirm() {
         Selenide.open("http://localhost:9999");
-        $("[data-test-id = 'name'] input").setValue("Иван Иванов");
+        $("[data-test-id = 'name'] input").setValue("Иван-Иван Иванов Иванович");
         $("[data-test-id = 'phone'] input").setValue("+79003170909");
         $("[data-test-id = 'agreement']").click();
         $$("button").find(Condition.exactText("Продолжить")).click();
