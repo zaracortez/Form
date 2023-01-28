@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class formTest {
+public class FormTest {
     @Test
     void shouldMakeConfirm() {
         Selenide.open("http://localhost:9999");
